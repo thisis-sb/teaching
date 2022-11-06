@@ -6,7 +6,7 @@ Math methods
 
 def decimal2binary(number):
     """
-    :param number: integer base10 number to convert. Current restriction: must be > 0
+    :param number: integer base10 number to convert. Current restriction: must be >= 0
     :return: binary value in string format preceded by '0b'
     """
 
