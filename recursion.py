@@ -6,22 +6,15 @@ Recursion Examples
 import math
 
 def recursive_factorial(num):
-    if num == 1:
-        return 1
-    else:
-        return num * recursive_factorial(num - 1)
+    return 1 if num == 1 else num * recursive_factorial(num - 1)
 
 def sum_of_list(inp: list):
-    if len(inp) == 2:
-        return inp[0] + inp[1]
-    return inp[0] + sum_of_list(inp[1:])
+    return inp[0] + inp[1] if len(inp) == 2 else inp[0] + sum_of_list(inp[1:])
 
 def fibonacci(inp: int):
-    if inp == 0:
-        return 0
-    if inp == 1 or inp == 2:
-        return 1
-    return fibonacci(inp-1) + fibonacci(inp-2)
+    return 0 if inp == 0 \
+        else 1 if (inp == 1 or inp == 2) \
+        else (fibonacci(inp-1) + fibonacci(inp-2))
 
 ''' -------------------------------------------------------------------------------------------- '''
 if __name__ == '__main__':
