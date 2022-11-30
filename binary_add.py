@@ -45,7 +45,7 @@ if __name__ == '__main__':
               % (exp_result, act_result))
 
     n1 = [1, 0]  # decimal 2
-    n2 = [0, 1]  # decimal 3
+    n2 = [0, 1]  # decimal 1
     exp_result = [1, 1]
     act_result = add_binary_as_list(n1, n2)
     print('OK') if act_result == exp_result else \
