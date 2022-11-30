@@ -1,1 +1,1 @@
-### Teaching programming concepts to newbies
+### Teaching programming concepts to newbies who think they're not newbies :-D
