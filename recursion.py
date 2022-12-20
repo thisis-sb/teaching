@@ -31,10 +31,10 @@ def my_max(inp: list):
     else:
         return l2
 
-''' convert a decimal number to any base'''
-def decimal_to_any_base(n,base):
+''' convert a base-10 number to any base'''
+def base10_to_any_base(n,base):
     base_chars = "0123456789ABCDEF"
-    return base_chars[n] if n < base else decimal_to_any_base(n//base, base) + base_chars[n % base]
+    return base_chars[n] if n < base else base10_to_any_base(n//base, base) + base_chars[n % base]
 
 ''' -------------------------------------------------------------------------------------------- '''
 if __name__ == '__main__':
@@ -53,5 +53,5 @@ if __name__ == '__main__':
     print('my_max:', my_max([1, 0, 4, 3, 7, 6, 9, 14, 2, 4]))
 
     print('decimal_to_any_base:')
-    print('2835, 16:', decimal_to_any_base(2835, 16))
-    print('34, 2:', decimal_to_any_base(34, 2))
+    print('2835, 16:', base10_to_any_base(2835, 16))
+    print('34, 2:', base10_to_any_base(34, 2))
