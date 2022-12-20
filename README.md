@@ -1,1 +1,1 @@
-### Teaching programming concepts to newbies who think they're not newbies :-D
+### Exercises done while teaching programming concepts in python
